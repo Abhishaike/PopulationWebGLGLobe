@@ -11,19 +11,24 @@
 
       }
 /* Dropdown Button */
+
 .dropbtn {
     background-color: #4CAF50;
     color: white;
-    padding: 16px;
+    padding: 12px;
     font-size: 12px;
+    border: none;
+}
+.dropbtn0 {
+    background-color: #000000; ;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
     border: none;
     cursor: pointer;
 }
 
-/* Dropdown button on hover & focus */
-.dropbtn:hover, .dropbtn:focus {
-    background-color: #3e8e41;
-}
+
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
@@ -33,11 +38,11 @@
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
-    right:0;
+    left: 0;
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 120px;
+    min-width: 100px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
@@ -62,7 +67,7 @@
     }
       body {
 
-        margin: 0;
+        margin: 10;
         padding: 0;
         background: #000000 url(/loading.gif) center center no-repeat;
         color: #ffffff;
@@ -221,7 +226,7 @@
 
       Current world population (estimated): <span id="worldpop" style="font-weight: bold"></span>.
         <div id="container"></div>
-
+<br>
 
   <div id="info">
 
@@ -251,27 +256,47 @@
     <span id="pop2050" class="year">2050</span>
 
 
-<button onclick="myFunction()" class="dropbtn">Pop. Heatmaps</button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="#">1950</a>
-    <a href="#">1955</a>
-    <a href="#">1960</a>
-    <a href="#">1965</a>
-    <a href="#">1970</a>
-    <a href="#">1975</a>
-    <a href="#">1980</a>
-    <a href="#">1985</a>
-    <a href="#">1990</a>
-    <a href="#">1995</a>
-    <a href="#">2000</a>
-    <a href="#">2005</a>
-    <a href="#">2010</a>
-    <a href="#">2015</a>
-    <a href="#">2020</a>
-    <a href="#">2025</a>
-    <a href="#">2050</a>
+<br>
+<span class="dropbtn">Pop. Heatmaps</span>
+  <div>
 
+  <br>
+    <button onclick = "document.getElementById('1950').src = 'https://fusiontables.google.com/embedviz?q=select+col1%2C+col2%2C+col3+from+1McQS4ZAPZIvqvmFOkRLxu-vBEHbBIFOHBaNAorYZ+limit+1000&amp;viz=HEATMAP&amp;h=true&amp;lat=25.03555146355891&amp;lng=-71.16367187499998&amp;t=1&amp;z=3&amp;l=col1&amp;y=2&amp;tmplt=2&amp;hmd=true&amp;hmg=%2366ff0000%2C%2393ff00ff%2C%23c1ff00ff%2C%23eeff00ff%2C%23f4e300ff%2C%23f4e300ff%2C%23f9c600ff%2C%23ffaa00ff%2C%23ff7100ff%2C%23ff3900ff%2C%23ff0000ff&amp;hmo=0.6&amp;hmr=50&amp;hmw=3&amp;hml=TWO_COL_LAT_LNG'" class="dropbtn0"<a href="#">1950</a></button>
 
+    <button onclick = "document.getElementById('1950').src = 'https://fusiontables.google.com/embedviz?q=select+col1%2C+col2%2C+col4+from+1McQS4ZAPZIvqvmFOkRLxu-vBEHbBIFOHBaNAorYZ+limit+1000&amp;viz=HEATMAP&amp;h=true&amp;lat=19.921414845492336&amp;lng=-145.16757812499998&amp;t=1&amp;z=3&amp;l=col1&amp;y=2&amp;tmplt=2&amp;hmd=true&amp;hmg=%2366ff0000%2C%2393ff00ff%2C%23c1ff00ff%2C%23eeff00ff%2C%23f4e300ff%2C%23f4e300ff%2C%23f9c600ff%2C%23ffaa00ff%2C%23ff7100ff%2C%23ff3900ff%2C%23ff0000ff&amp;hmo=0.6&amp;hmr=50&amp;hmw=4&amp;hml=TWO_COL_LAT_LNG"class="dropbtn0"<a href="#">1955</a></button>
+
+    <button onclick = "document.getElementById('1950').src = 'https://fusiontables.google.com/embedviz?q=select+col1%2C+col2%2C+col5+from+1McQS4ZAPZIvqvmFOkRLxu-vBEHbBIFOHBaNAorYZ+limit+1000&amp;viz=HEATMAP&amp;h=true&amp;lat=25.03555146355891&amp;lng=-71.16367187499998&amp;t=1&amp;z=3&amp;l=col1&amp;y=2&amp;tmplt=2&amp;hmd=true&amp;hmg=%2366ff0000%2C%2393ff00ff%2C%23c1ff00ff%2C%23eeff00ff%2C%23f4e300ff%2C%23f4e300ff%2C%23f9c600ff%2C%23ffaa00ff%2C%23ff7100ff%2C%23ff3900ff%2C%23ff0000ff&amp;hmo=0.6&amp;hmr=50&amp;hmw=5&amp;hml=TWO_COL_LAT_LNG'" class="dropbtn0"<a href="#">1960</a></button>
+
+    <button onclick = "document.getElementById('1950').src = 'https://fusiontables.google.com/embedviz?q=select+col1%2C+col2%2C+col6+from+1McQS4ZAPZIvqvmFOkRLxu-vBEHbBIFOHBaNAorYZ+limit+1000&amp;viz=HEATMAP&amp;h=true&amp;lat=25.03555146355891&amp;lng=-71.16367187499998&amp;t=1&amp;z=3&amp;l=col1&amp;y=2&amp;tmplt=2&amp;hmd=true&amp;hmg=%2366ff0000%2C%2393ff00ff%2C%23c1ff00ff%2C%23eeff00ff%2C%23f4e300ff%2C%23f4e300ff%2C%23f9c600ff%2C%23ffaa00ff%2C%23ff7100ff%2C%23ff3900ff%2C%23ff0000ff&amp;hmo=0.6&amp;hmr=50&amp;hmw=6&amp;hml=TWO_COL_LAT_LNG'" class="dropbtn0"<a href="#">1965</a></button>
+
+    <button onclick = "document.getElementById('1950').src = 'https://fusiontables.google.com/embedviz?q=select+col1%2C+col2%2C+col7+from+1McQS4ZAPZIvqvmFOkRLxu-vBEHbBIFOHBaNAorYZ+limit+1000&amp;viz=HEATMAP&amp;h=true&amp;lat=25.03555146355891&amp;lng=-71.16367187499998&amp;t=1&amp;z=3&amp;l=col1&amp;y=2&amp;tmplt=2&amp;hmd=true&amp;hmg=%2366ff0000%2C%2393ff00ff%2C%23c1ff00ff%2C%23eeff00ff%2C%23f4e300ff%2C%23f4e300ff%2C%23f9c600ff%2C%23ffaa00ff%2C%23ff7100ff%2C%23ff3900ff%2C%23ff0000ff&amp;hmo=0.6&amp;hmr=50&amp;hmw=7&amp;hml=TWO_COL_LAT_LNG'" class="dropbtn0"<a href="#">1970</a></button>
+
+    <button onclick = "document.getElementById('1950').src = 'https://fusiontables.google.com/embedviz?q=select+col1%2C+col2%2C+col8+from+1McQS4ZAPZIvqvmFOkRLxu-vBEHbBIFOHBaNAorYZ+limit+1000&amp;viz=HEATMAP&amp;h=true&amp;lat=25.03555146355891&amp;lng=-71.16367187499998&amp;t=1&amp;z=3&amp;l=col1&amp;y=2&amp;tmplt=2&amp;hmd=true&amp;hmg=%2366ff0000%2C%2393ff00ff%2C%23c1ff00ff%2C%23eeff00ff%2C%23f4e300ff%2C%23f4e300ff%2C%23f9c600ff%2C%23ffaa00ff%2C%23ff7100ff%2C%23ff3900ff%2C%23ff0000ff&amp;hmo=0.6&amp;hmr=50&amp;hmw=8&amp;hml=TWO_COL_LAT_LNG'" class="dropbtn0"<a href="#">1975</a></button>
+
+    <button onclick = "document.getElementById('1950').src = 'https://fusiontables.google.com/embedviz?q=select+col1%2C+col2%2C+col9+from+1McQS4ZAPZIvqvmFOkRLxu-vBEHbBIFOHBaNAorYZ+limit+1000&amp;viz=HEATMAP&amp;h=true&amp;lat=25.03555146355891&amp;lng=-71.16367187499998&amp;t=1&amp;z=3&amp;l=col1&amp;y=2&amp;tmplt=2&amp;hmd=true&amp;hmg=%2366ff0000%2C%2393ff00ff%2C%23c1ff00ff%2C%23eeff00ff%2C%23f4e300ff%2C%23f4e300ff%2C%23f9c600ff%2C%23ffaa00ff%2C%23ff7100ff%2C%23ff3900ff%2C%23ff0000ff&amp;hmo=0.6&amp;hmr=50&amp;hmw=9&amp;hml=TWO_COL_LAT_LNG'" class="dropbtn0"<a href="#">1980</a></button>
+
+    <button onclick = "document.getElementById('1950').src = 'https://fusiontables.google.com/embedviz?q=select+col1%2C+col2%2C+col10+from+1McQS4ZAPZIvqvmFOkRLxu-vBEHbBIFOHBaNAorYZ+limit+1000&amp;viz=HEATMAP&amp;h=true&amp;lat=25.03555146355891&amp;lng=-71.16367187499998&amp;t=1&amp;z=3&amp;l=col1&amp;y=2&amp;tmplt=2&amp;hmd=true&amp;hmg=%2366ff0000%2C%2393ff00ff%2C%23c1ff00ff%2C%23eeff00ff%2C%23f4e300ff%2C%23f4e300ff%2C%23f9c600ff%2C%23ffaa00ff%2C%23ff7100ff%2C%23ff3900ff%2C%23ff0000ff&amp;hmo=0.6&amp;hmr=50&amp;hmw=10&amp;hml=TWO_COL_LAT_LNG'" class="dropbtn0"<a href="#">1985</a></button>
+
+    <button onclick = "document.getElementById('1950').src = 'https://fusiontables.google.com/embedviz?q=select+col1%2C+col2%2C+col11+from+1McQS4ZAPZIvqvmFOkRLxu-vBEHbBIFOHBaNAorYZ+limit+1000&amp;viz=HEATMAP&amp;h=true&amp;lat=25.03555146355891&amp;lng=-71.16367187499998&amp;t=1&amp;z=3&amp;l=col1&amp;y=2&amp;tmplt=2&amp;hmd=true&amp;hmg=%2366ff0000%2C%2393ff00ff%2C%23c1ff00ff%2C%23eeff00ff%2C%23f4e300ff%2C%23f4e300ff%2C%23f9c600ff%2C%23ffaa00ff%2C%23ff7100ff%2C%23ff3900ff%2C%23ff0000ff&amp;hmo=0.6&amp;hmr=50&amp;hmw=11&amp;hml=TWO_COL_LAT_LNG'" class="dropbtn0"<a href="#">1990</a></button>
+
+    <button onclick = "document.getElementById('1950').src = 'https://fusiontables.google.com/embedviz?q=select+col1%2C+col2%2C+col12+from+1McQS4ZAPZIvqvmFOkRLxu-vBEHbBIFOHBaNAorYZ+limit+1000&amp;viz=HEATMAP&amp;h=true&amp;lat=25.03555146355891&amp;lng=-71.16367187499998&amp;t=1&amp;z=3&amp;l=col1&amp;y=2&amp;tmplt=2&amp;hmd=true&amp;hmg=%2366ff0000%2C%2393ff00ff%2C%23c1ff00ff%2C%23eeff00ff%2C%23f4e300ff%2C%23f4e300ff%2C%23f9c600ff%2C%23ffaa00ff%2C%23ff7100ff%2C%23ff3900ff%2C%23ff0000ff&amp;hmo=0.6&amp;hmr=50&amp;hmw=12&amp;hml=TWO_COL_LAT_LNG'" class="dropbtn0"<a href="#">1995</a></button>
+
+    <button onclick = "document.getElementById('1950').src = 'https://fusiontables.google.com/embedviz?q=select+col1%2C+col2%2C+col13+from+1McQS4ZAPZIvqvmFOkRLxu-vBEHbBIFOHBaNAorYZ+limit+1000&amp;viz=HEATMAP&amp;h=true&amp;lat=25.03555146355891&amp;lng=-71.16367187499998&amp;t=1&amp;z=3&amp;l=col1&amp;y=2&amp;tmplt=2&amp;hmd=true&amp;hmg=%2366ff0000%2C%2393ff00ff%2C%23c1ff00ff%2C%23eeff00ff%2C%23f4e300ff%2C%23f4e300ff%2C%23f9c600ff%2C%23ffaa00ff%2C%23ff7100ff%2C%23ff3900ff%2C%23ff0000ff&amp;hmo=0.6&amp;hmr=50&amp;hmw=13&amp;hml=TWO_COL_LAT_LNG'" class="dropbtn0"<a href="#">2000</a></button>
+
+    <button onclick = "document.getElementById('1950').src = 'https://fusiontables.google.com/embedviz?q=select+col1%2C+col2%2C+col14+from+1McQS4ZAPZIvqvmFOkRLxu-vBEHbBIFOHBaNAorYZ+limit+1000&amp;viz=HEATMAP&amp;h=true&amp;lat=25.03555146355891&amp;lng=-71.16367187499998&amp;t=1&amp;z=3&amp;l=col1&amp;y=2&amp;tmplt=2&amp;hmd=true&amp;hmg=%2366ff0000%2C%2393ff00ff%2C%23c1ff00ff%2C%23eeff00ff%2C%23f4e300ff%2C%23f4e300ff%2C%23f9c600ff%2C%23ffaa00ff%2C%23ff7100ff%2C%23ff3900ff%2C%23ff0000ff&amp;hmo=0.6&amp;hmr=50&amp;hmw=14&amp;hml=TWO_COL_LAT_LNG'" class="dropbtn0"<a href="#">2005</a></button>
+
+    <button onclick = "document.getElementById('1950').src = 'https://fusiontables.google.com/embedviz?q=select+col1%2C+col2%2C+col15+from+1McQS4ZAPZIvqvmFOkRLxu-vBEHbBIFOHBaNAorYZ+limit+1000&amp;viz=HEATMAP&amp;h=true&amp;lat=25.03555146355891&amp;lng=-71.16367187499998&amp;t=1&amp;z=3&amp;l=col1&amp;y=2&amp;tmplt=2&amp;hmd=true&amp;hmg=%2366ff0000%2C%2393ff00ff%2C%23c1ff00ff%2C%23eeff00ff%2C%23f4e300ff%2C%23f4e300ff%2C%23f9c600ff%2C%23ffaa00ff%2C%23ff7100ff%2C%23ff3900ff%2C%23ff0000ff&amp;hmo=0.6&amp;hmr=50&amp;hmw=15&amp;hml=TWO_COL_LAT_LNG'" class="dropbtn0"<a href="#">2010</a></button>
+
+    <button onclick = "document.getElementById('1950').src = 'https://fusiontables.google.com/embedviz?q=select+col1%2C+col2%2C+col16+from+1McQS4ZAPZIvqvmFOkRLxu-vBEHbBIFOHBaNAorYZ+limit+1000&amp;viz=HEATMAP&amp;h=true&amp;lat=25.03555146355891&amp;lng=-71.16367187499998&amp;t=1&amp;z=3&amp;l=col1&amp;y=2&amp;tmplt=2&amp;hmd=true&amp;hmg=%2366ff0000%2C%2393ff00ff%2C%23c1ff00ff%2C%23eeff00ff%2C%23f4e300ff%2C%23f4e300ff%2C%23f9c600ff%2C%23ffaa00ff%2C%23ff7100ff%2C%23ff3900ff%2C%23ff0000ff&amp;hmo=0.6&amp;hmr=50&amp;hmw=16&amp;hml=TWO_COL_LAT_LNG'" class="dropbtn0"<a href="#">2015</a></button>
+
+    <button onclick = "document.getElementById('1950').src = 'https://fusiontables.google.com/embedviz?q=select+col1%2C+col2%2C+col17+from+1McQS4ZAPZIvqvmFOkRLxu-vBEHbBIFOHBaNAorYZ+limit+1000&amp;viz=HEATMAP&amp;h=true&amp;lat=25.03555146355891&amp;lng=-71.16367187499998&amp;t=1&amp;z=3&amp;l=col1&amp;y=2&amp;tmplt=2&amp;hmd=true&amp;hmg=%2366ff0000%2C%2393ff00ff%2C%23c1ff00ff%2C%23eeff00ff%2C%23f4e300ff%2C%23f4e300ff%2C%23f9c600ff%2C%23ffaa00ff%2C%23ff7100ff%2C%23ff3900ff%2C%23ff0000ff&amp;hmo=0.6&amp;hmr=50&amp;hmw=17&amp;hml=TWO_COL_LAT_LNG'" class="dropbtn0"<a href="#">2020</a></button>
+
+    <button onclick = "document.getElementById('1950').src = 'https://fusiontables.google.com/embedviz?q=select+col1%2C+col2%2C+col18+from+1McQS4ZAPZIvqvmFOkRLxu-vBEHbBIFOHBaNAorYZ+limit+1000&amp;viz=HEATMAP&amp;h=true&amp;lat=25.03555146355891&amp;lng=-71.16367187499998&amp;t=1&amp;z=3&amp;l=col1&amp;y=2&amp;tmplt=2&amp;hmd=true&amp;hmg=%2366ff0000%2C%2393ff00ff%2C%23c1ff00ff%2C%23eeff00ff%2C%23f4e300ff%2C%23f4e300ff%2C%23f9c600ff%2C%23ffaa00ff%2C%23ff7100ff%2C%23ff3900ff%2C%23ff0000ff&amp;hmo=0.6&amp;hmr=50&amp;hmw=18&amp;hml=TWO_COL_LAT_LNG'" class="dropbtn0"<a href="#">2025</a></button>
+
+    <button onclick = "document.getElementById('1950').src = 'https://fusiontables.google.com/embedviz?q=select+col1%2C+col2%2C+col19+from+1McQS4ZAPZIvqvmFOkRLxu-vBEHbBIFOHBaNAorYZ+limit+1000&amp;viz=HEATMAP&amp;h=true&amp;lat=25.03555146355891&amp;lng=-71.16367187499998&amp;t=1&amp;z=3&amp;l=col1&amp;y=2&amp;tmplt=2&amp;hmd=true&amp;hmg=%2366ff0000%2C%2393ff00ff%2C%23c1ff00ff%2C%23eeff00ff%2C%23f4e300ff%2C%23f4e300ff%2C%23f9c600ff%2C%23ffaa00ff%2C%23ff7100ff%2C%23ff3900ff%2C%23ff0000ff&amp;hmo=0.6&amp;hmr=50&amp;hmw=19&amp;hml=TWO_COL_LAT_LNG'" class="dropbtn0"<a href="#">2050</a></button>
+
+ <br>
+<iframe id = "1950" width="400" height="380" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?q=select+col1%2C+col2%2C+col19+from+1McQS4ZAPZIvqvmFOkRLxu-vBEHbBIFOHBaNAorYZ+limit+1000&amp;viz=HEATMAP&amp;h=true&amp;lat=25.03555146355891&amp;lng=-71.16367187499998&amp;t=1&amp;z=3&amp;l=col1&amp;y=2&amp;tmplt=2&amp;hmd=true&amp;hmg=%2366ff0000%2C%2393ff00ff%2C%23c1ff00ff%2C%23eeff00ff%2C%23f4e300ff%2C%23f4e300ff%2C%23f9c600ff%2C%23ffaa00ff%2C%23ff7100ff%2C%23ff3900ff%2C%23ff0000ff&amp;hmo=0.6&amp;hmr=50&amp;hmw=19&amp;hml=TWO_COL_LAT_LNG"></iframe>
   </div>
 
   </div>
@@ -289,30 +314,14 @@
   </a>
 
 
+
   <script type="text/javascript" src="third-party/Detector.js"></script>
   <script type="text/javascript" src="third-party/three.min.js"></script>
   <script type="text/javascript" src="third-party/Tween.js"></script>
   <script type="text/javascript" src="globe.js"></script>
   <script type="text/javascript">
 
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
 
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
    if(!Detector.webgl){
       Detector.addGetWebGLMessage();
     } else {
