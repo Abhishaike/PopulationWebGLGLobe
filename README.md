@@ -1,6 +1,6 @@
 # PopulationWebGLGLobe
 
-This is a data visualization program utilizing the WebGLGlobe created the Google Data Arts Team.
+This is a data visualization program utilizing the WebGLGlobe created by the Google Data Arts Team.
 The included Heroku link will launch an application that will build three things: 
 
 1. Using the included globe.js Javascript, graph the global population (on a city-by-city basis) from 1950-2050 in five year increments onto the globe.
